@@ -2,7 +2,7 @@
 
 ## Overview
 
-reCAPTCHA v3 is truely invisiable and will never interrupt your users.
+reCAPTCHA v3 is truly invisible and will never interrupt your users.
 It's recommended to include reCAPTCHA verification on forms or actions as well as in the background of pages for analytics.
 
 reCAPTCHA v3 returns a score for each request (1.0 is very likely a good interaction, 0.0 is very likely a bot). By default, you can use a threshold of 0.5.
@@ -24,10 +24,10 @@ reCAPTCHA v3 returns a score for each request (1.0 is very likely a good interac
 
 #### FE
 
-1. Import a module (ng-recaptcha) and listen to the web page events and actions
+1. Import a module (ng-recaptcha) and listen to the web page action events (eg. button click, form submit)
 2. Call recaptchaV3Service to execute action to get a token
 3. Call BE api to verify the token and obtain a score
-4. Check this score to decide if it's robot's behavour
+4. Check this score to decide if it's robot's behaviour
 
 #### BE
 
