@@ -3,12 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start:local": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev": "npm run build && cp server/server.js dist && node dist/server.js"
+    "postinstall": "ng build --aot --prod",
+    "dev": "npm run build && node server.js"
   },
   "private": true,
   "dependencies": {

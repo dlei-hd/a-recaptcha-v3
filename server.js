@@ -5,8 +5,8 @@ const { join } = require('path');
 const axios = require('axios');
 const querystring = require('querystring');
 
-const _port = 4100;
-const _app_folder = join(__dirname, 'a-recaptcha-v3');
+const _port = process.env.PORT || 4100;
+const _app_folder = join(__dirname, 'dist/a-recaptcha-v3');
 
 const app = express();
 
